@@ -1,0 +1,7 @@
+pandas
+openpyxl
+imaplib
+smtplib
+PyPDF2
+reportlab
+xlsxwriter
