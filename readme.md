@@ -31,14 +31,14 @@ After sending emails it should write the (sent/unsent) status back to the same e
 
 All the config details are to be maintained in the **config.py** file.
 
-1.ORG_EMAIL     = "@gmail.com"
-1.FROM_EMAIL    = "<x@gmail.com>" + ORG_EMAIL # John's email
-1.FROM_PWD      = "<Password for x@gmail.com>" # Password for John's email
-1.SMTP_SERVER   = "imap.gmail.com"
-1.SMTP_PORT     =  993
-1.CONTENT_EMAIL = "<y@gmail.com>"  # Content team's email
-1.EXCEL_CONFIG  = './input_data.xlsx' # Location of student excel file
-1.LOGO          = 'input_logo.jpg'    # Location of Logo file
+1. ORG_EMAIL     = "@gmail.com"
+1. FROM_EMAIL    = "<x@gmail.com>" + ORG_EMAIL # John's email
+1. FROM_PWD      = "<Password for x@gmail.com>" # Password for John's email
+1. SMTP_SERVER   = "imap.gmail.com"
+1. SMTP_PORT     =  993
+1. CONTENT_EMAIL = "<y@gmail.com>"  # Content team's email
+1. EXCEL_CONFIG  = './input_data.xlsx' # Location of student excel file
+1. LOGO          = 'input_logo.jpg'    # Location of Logo file
 
 ### Prerequisites / Installation Steps
 This project is built with Python 3.6.2 and all modules need to be python 3 compatible.
