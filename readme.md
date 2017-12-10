@@ -1,7 +1,7 @@
 # Automated Email Communication
 This project attempts to arrange an automated email communication based on the following user story.
 
-John is a guitar**** instructor who loves to teach the guitar, He want to automate the process of sending emails to his students, he has a portal where his students can register to different courses and learn.There is a content team for him who shares the content with him via email. In the subject line, there is going to be a code followed by the username (327778_tagore). Every day John has to share some pdf notes to his students via email. The problem he is facing is for each student he needs to Edit the pdf course material add the logo and some content to the pdf, attach this to the email and send to respective students. In the beginning, he had only 5 students which are not difficult for him to do it manually, now he had more students every day he needs to send the emails to 100 - 150 students which are going be an impossible task for him. 
+John is a guitar instructor who loves to teach the guitar, He want to automate the process of sending emails to his students, he has a portal where his students can register to different courses and learn.There is a content team for him who shares the content with him via email. In the subject line, there is going to be a code followed by the username (327778_tagore). Every day John has to share some pdf notes to his students via email. The problem he is facing is for each student he needs to Edit the pdf course material add the logo and some content to the pdf, attach this to the email and send to respective students. In the beginning, he had only 5 students which are not difficult for him to do it manually, now he had more students every day he needs to send the emails to 100 - 150 students which are going be an impossible task for him. 
 
 He wanted to automate the process, This is the overview what he wanted to do.
 As his portal supports to download the student's list in excel sheet, he wants to parse the excel sheet and match the subject line with the student, read the email get the attachment append the logo and text to the PDF and attach this to email with some content and send it to respective students.
@@ -31,14 +31,14 @@ After sending emails it should write the (sent/unsent) status back to the same e
 
 All the config details are to be maintained in the **config.py** file.
 
-ORG_EMAIL     = "@gmail.com"
-FROM_EMAIL    = "<x@gmail.com>" + ORG_EMAIL # John's email
-FROM_PWD      = "<Password for x@gmail.com>" # Password for John's email
-SMTP_SERVER   = "imap.gmail.com"
-SMTP_PORT     =  993
-CONTENT_EMAIL = "<y@gmail.com>"  # Content team's email
-EXCEL_CONFIG  = './input_data.xlsx' # Location of student excel file
-LOGO          = 'input_logo.jpg'    # Location of Logo file
+1.ORG_EMAIL     = "@gmail.com"
+1.FROM_EMAIL    = "<x@gmail.com>" + ORG_EMAIL # John's email
+1.FROM_PWD      = "<Password for x@gmail.com>" # Password for John's email
+1.SMTP_SERVER   = "imap.gmail.com"
+1.SMTP_PORT     =  993
+1.CONTENT_EMAIL = "<y@gmail.com>"  # Content team's email
+1.EXCEL_CONFIG  = './input_data.xlsx' # Location of student excel file
+1.LOGO          = 'input_logo.jpg'    # Location of Logo file
 
 ### Prerequisites / Installation Steps
 This project is built with Python 3.6.2 and all modules need to be python 3 compatible.
