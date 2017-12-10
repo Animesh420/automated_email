@@ -73,3 +73,11 @@ There are following three major parts of the solution.
 1. The message body is prepared and the mail is sent. [23-27]
 1. Status is updated in excel sheet and colors are remarked. [29-33]
 
+## Troubleshooting and How to run:
+1. Make sure you have turned on the provide access to less secure apps for your gmail account. An alternative way would     be to use oauth authentication. Refer this [link](https://support.google.com/accounts/answer/6010255?hl=en).
+1. To run the code execute the following command:
+   ```
+   python orchestra.py
+   ```
+1. In the excel sheet if you add a new row, make sure you provide all the details accurately, ie index, in the first        column, ( the one which has no name)
+1. Uncomment the line 22 in the orchestra.py for testing purposes and put the email to which you want to send the mail

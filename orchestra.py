@@ -19,7 +19,7 @@ for key,value in excel_dict.items():
         print("User email decrypted as {}".format(student_email))
 
         # Dummy sender fixing code
-        student_email = 'shrishty123chandra@gmail.com'
+        # student_email = 'shrishty123chandra@gmail.com'
 
         # Creating student subject text
         student_subject = '{}_{}_{}'.format(key,*names)
