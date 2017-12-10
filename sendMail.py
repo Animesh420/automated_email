@@ -7,6 +7,9 @@ from email.mime.text import MIMEText
 from email.utils import COMMASPACE, formatdate
 
 def send_mail(from_user,to_user,subject,text,attachName):
+    """
+    Used to sent the email to a certain email ID and the attachm
+    """
     assert isinstance(to_user, list)
 
     msg = MIMEMultipart()

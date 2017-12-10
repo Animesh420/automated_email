@@ -5,6 +5,9 @@ from reportlab.lib.pagesizes import A4
 
 
 def gen_pdf(student_id, existing_pdf, logo):
+    """
+    Creates a pdf file with changes using the logo and the 
+    message alongwith an input pdf"""
     # path = 'input_logo.jpg'
     path = logo
     # existing = PdfFileReader('./inputfile.pdf')
@@ -39,6 +42,6 @@ def gen_pdf(student_id, existing_pdf, logo):
     pdf.write(open("out{}_{}.pdf".format(student_id,existing_pdf),"wb"))
     return "out{}_{}.pdf".format(student_id,existing_pdf)
 
-
+"""Dummy test code """
 # if __name__ == '__main__':
 #     gen_pdf()

@@ -3,6 +3,9 @@ import email
 from config import SMTP_SERVER, FROM_EMAIL, FROM_PWD
 
 def read_email_from_gmail(content_email, subject):
+    """ Reads the email using  a prescribed email 
+    id and subject 
+    """
     details = {}
     mail = imaplib.IMAP4_SSL(SMTP_SERVER)
     mail.login(FROM_EMAIL, FROM_PWD)
@@ -34,6 +37,7 @@ def read_email_from_gmail(content_email, subject):
                     details[subject] = filename
     return details
 
+""" Dummy test code """
 # # subjects = read_email_from_gmail("animesh.mukherjeei323460@gmail.com","3765_ani")
 # subjects = read_email_from_gmail("animesh.mukherjeei323460@gmail.com","327778_ani_mkjee")
 # print(subjects)
